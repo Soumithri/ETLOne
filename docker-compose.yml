@@ -1,0 +1,12 @@
+version: '3.2'
+
+services:
+  etlone:
+    image: etlone:v1
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/ETLOne
+    ports:
+      - 9000:8080

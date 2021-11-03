@@ -1,4 +1,4 @@
-from pydantic import BaseModel, EmailStr, IPvAnyAddress
+from pydantic import BaseModel, EmailStr
 from typing import Literal
 
 
@@ -9,4 +9,4 @@ class UserValidation(BaseModel):
     email: EmailStr
     gender: Literal['Genderfluid', 'Bigender', 'Male', 'Non-binary', 'Female',
                     'Agender', 'Genderqueer', 'Polygender']
-    ip_address: IPvAnyAddress
+    ip_address: str

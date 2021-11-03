@@ -133,3 +133,4 @@ DATA.csv
 
 # vs code
 .vscode
+.venv*

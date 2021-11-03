@@ -10,3 +10,14 @@ services:
       - .:/ETLOne
     ports:
       - 9000:8080
+
+  api:
+    image: api:v1
+    build:
+      context: api/
+      dockerfile: Dockerfile-api
+    command: uvicorn main:app --reload --host 0.0.0.0
+    volumes:
+      - .:/api
+    ports:
+      - 8008:8000

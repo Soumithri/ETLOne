@@ -1,6 +1,9 @@
 # ETLOne ##
 ETLOne is a one stop ETL solution to manage and monitor your workloads. It is a completely serverless framework which uses AWS lambda, S3, AWS glue and Athena to perform ETL for your dataset. The application also provides endpoints using FAST API to predict the output of your ML model.
 
+![ETLone architecture](https://user-images.githubusercontent.com/22824395/140051398-a52f882d-2e8c-4363-bf1d-519520cc91ea.jpeg)
+
+
 ## Getting Started ##
 1. Start docker
 2. Clone the repository
